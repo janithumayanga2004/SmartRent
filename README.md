@@ -2,109 +2,104 @@
 
 ### Machine Learning Based House Rental Price Prediction & Property Recommendation System
 
-SmartRent is a full-stack machine learning application designed to **predict house rental prices** and provide **rental market analytics and property recommendations**.
-
-The system combines a React-based frontend, Flask backend, SQLite database, and a machine learning prediction engine trained on real rental listing data.
+SmartRent is a full-stack machine learning application that predicts **monthly house rental prices**, provides **rental market analytics**, and supports **property recommendations** using real-world rental listing data.
 
 ---
 
 ## ✨ Features
 
 * 🏠 House rental price prediction
-* 🤖 Machine learning based predictions
-* 📊 Rental market analytics
+* 🤖 Machine learning powered predictions
 * 🔎 Property recommendation
+* 📊 Rental market analytics
+* 📈 Interactive data visualization
 * 👤 User registration and authentication
 * 🔐 JWT-based authentication
 * 🔑 Google Sign-In
-* 📈 Interactive charts and visualizations
-* 🗃️ Rental listing management
+* 🏘️ Rental property management
 * 📱 Responsive modern interface
-* 📋 Prediction history and user data management
-
----
-
-## 🧩 System Architecture
-
-```text
-                    ┌─────────────────────┐
-                    │    React Frontend   │
-                    │     React 19        │
-                    │      Vite 8         │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    Flask Backend    │
-                    │      Flask 3.x      │
-                    │    REST Services    │
-                    └───────┬───────┬─────┘
-                            │       │
-                  ┌─────────┘       └──────────┐
-                  ▼                            ▼
-        ┌─────────────────┐          ┌──────────────────┐
-        │   SQLite 3      │          │   ML Prediction  │
-        │  smartrent.db   │          │     Engine       │
-        └─────────────────┘          └────────┬─────────┘
-                                              │
-                                              ▼
-                                    ┌──────────────────┐
-                                    │ ExtraTrees Model │
-                                    │ + Log Transform  │
-                                    └──────────────────┘
-```
+* 📋 Prediction and rental data management
 
 ---
 
 # 🛠️ Tech Stack
 
-## 🎨 Frontend
+### 🎨 Frontend
 
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts_3-22B5BF?style=for-the-badge)
-![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge)
+![Lucide React](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge)
 ![CSS](https://img.shields.io/badge/Modern_CSS-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![Oxlint](https://img.shields.io/badge/Oxlint-111111?style=for-the-badge)
 
-## ⚙️ Backend
+### ⚙️ Backend
 
 ![Python](https://img.shields.io/badge/Python_3.11-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask_3.x-000000?style=for-the-badge\&logo=flask\&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite_3-003B57?style=for-the-badge\&logo=sqlite\&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge\&logo=sqlalchemy\&logoColor=white)
-![JWT](https://img.shields.io/badge/PyJWT-000000?style=for-the-badge)
+![PyJWT](https://img.shields.io/badge/PyJWT-000000?style=for-the-badge)
 
-## 🤖 Machine Learning & Data
+### 🤖 Machine Learning & Data
 
 ![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge\&logo=numpy\&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=for-the-badge)
-![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=for-the-badge)
-![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge\&logoColor=black)
 ![Joblib](https://img.shields.io/badge/Joblib-4B8BBE?style=for-the-badge)
 
 ---
 
-# 🎯 Objectives
+# 🎯 Project Objectives
 
 SmartRent aims to:
 
-* Predict monthly house rental prices using machine learning.
+* Predict monthly rental prices using machine learning.
 * Analyze rental market trends.
-* Help users identify suitable rental properties.
-* Provide data-driven rental recommendations.
+* Help users find suitable rental properties.
+* Provide data-driven property recommendations.
+* Visualize rental market information.
 * Demonstrate an end-to-end machine learning application.
-* Provide a secure platform for managing users and rental information.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                         ┌──────────────────────┐
+                         │    React Frontend    │
+                         │     React 19         │
+                         │       Vite 8         │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │    Flask Backend     │
+                         │      Flask 3.x       │
+                         └───────┬────────┬─────┘
+                                 │        │
+                    ┌────────────┘        └────────────┐
+                    ▼                                  ▼
+          ┌──────────────────┐              ┌──────────────────┐
+          │    SQLite 3      │              │  ML Prediction   │
+          │   smartrent.db   │              │     Pipeline     │
+          └──────────────────┘              └────────┬─────────┘
+                                                     │
+                                                     ▼
+                                           ┌──────────────────┐
+                                           │ Voting Ensemble  │
+                                           │ XGBoost + RF     │
+                                           └──────────────────┘
+```
 
 ---
 
 # 📊 Dataset
 
-SmartRent uses the **House Rent Dataset** containing **4,746 verified rental listings**.
+SmartRent uses the **House Rent Dataset** containing **4,746 rental listings** from major Indian Tier-1 cities.
 
-The dataset covers major Indian Tier-1 cities:
+### Cities Covered
 
 * Mumbai
 * Delhi
@@ -113,135 +108,280 @@ The dataset covers major Indian Tier-1 cities:
 * Hyderabad
 * Kolkata
 
-### Main Features
-
-| Feature             | Description                   |
-| ------------------- | ----------------------------- |
-| `Posted On`         | Listing publication date      |
-| `BHK`               | Number of bedrooms            |
-| `Rent`              | Monthly rental price — target |
-| `Size`              | Property size in sq. ft.      |
-| `Floor`             | Floor information             |
-| `Area Type`         | Type of property area         |
-| `Area Locality`     | Locality name                 |
-| `City`              | City                          |
-| `Furnishing Status` | Furnishing condition          |
-| `Tenant Preferred`  | Preferred tenant type         |
-| `Bathroom`          | Number of bathrooms           |
-| `Point of Contact`  | Contact type                  |
-
----
-
-# 🤖 Machine Learning
-
-The ML pipeline includes:
+### Main Dataset Features
 
 ```text
-Raw Dataset
-     │
-     ▼
-Data Understanding
-     │
-     ▼
-Data Cleaning
-     │
-     ▼
-Feature Engineering
-     │
-     ▼
-Preprocessing
-     │
-     ▼
-Model Training
-     │
-     ▼
-Model Evaluation
-     │
-     ▼
-Best Model
-     │
-     ▼
-Rental Price Prediction
+Posted On
+BHK
+Rent
+Size
+Floor
+Area Type
+Area Locality
+City
+Furnishing Status
+Tenant Preferred
+Bathroom
+Point of Contact
 ```
 
-### Feature Engineering
+The target variable for rental price prediction is:
 
-Important engineered features include:
-
-* `Posted_Year`
-* `Posted_Month`
-* `Posted_DayOfWeek`
-* `Current_Floor`
-* `Total_Floors`
-* `Floor_Ratio`
-* `Bathroom_BHK_Ratio`
-* `Size_Category`
-* `Log_Size`
-* `Log_Rent`
-
-> `Price_Per_Sqft` is used for analytics where appropriate but is excluded from prediction features to avoid target leakage.
+```text
+Rent
+```
 
 ---
 
-# 🧠 Model Development
+# 🧹 Data Preprocessing
 
-Several machine learning approaches were evaluated, including:
+The machine learning pipeline performs preprocessing before model training and prediction.
+
+### Numerical Features
+
+The pipeline processes:
+
+```text
+BHK
+Size
+Bathroom
+Current_Floor
+Total_Floors
+Floor_Ratio
+Bathroom_BHK_Ratio
+Size_Per_BHK
+Size_Per_Bathroom
+Is_Top_Floor
+Is_Ground_Floor
+Posted_Year
+Posted_Month
+Posted_DayOfWeek
+Log_Size
+```
+
+Numerical preprocessing includes:
+
+* Median imputation
+* StandardScaler
+
+### Categorical Features
+
+```text
+Area Type
+Area Locality
+City
+Furnishing Status
+Tenant Preferred
+Size_Category
+City_Locality
+City_BHK
+City_Furnishing
+```
+
+Categorical preprocessing uses:
+
+```text
+TargetEncoder
+```
+
+with cross-validation to encode categorical information effectively.
+
+---
+
+# ⚙️ Feature Engineering
+
+SmartRent creates additional features from the original dataset to improve prediction performance.
+
+### Date Features
+
+```text
+Posted_Year
+Posted_Month
+Posted_DayOfWeek
+```
+
+### Floor Features
+
+```text
+Current_Floor
+Total_Floors
+Floor_Ratio
+Is_Top_Floor
+Is_Ground_Floor
+```
+
+### Property Features
+
+```text
+Bathroom_BHK_Ratio
+Size_Per_BHK
+Size_Per_Bathroom
+Size_Category
+Log_Size
+```
+
+These engineered features provide additional information about property characteristics and help the models learn rental-price patterns.
+
+---
+
+# 🧠 Machine Learning
+
+Several machine learning models were evaluated using the same preprocessing and log-target pipeline.
+
+### Models Evaluated
 
 * Linear Regression
-* Ridge Regression
 * Random Forest
-* Extra Trees
-* Gradient Boosting
 * XGBoost
-* LightGBM
-* CatBoost
+* Voting Ensemble
 
-### Final Model
-
-**ExtraTreesRegressor** was selected as the final prediction model and wrapped using:
+The rental price target is transformed using:
 
 ```text
-TransformedTargetRegressor
-        │
-        └── np.log1p transformation
-              │
-              ▼
-        ExtraTreesRegressor
+np.log1p
 ```
 
-This approach helps the model handle the skewed rental-price distribution more effectively.
+and converted back to the original scale using:
+
+```text
+np.expm1
+```
+
+This helps the models handle the skewed distribution of rental prices.
 
 ---
 
-# 📈 Analytics
+# 🏆 Final Model
 
-SmartRent provides rental-market insights through interactive visualizations using **Recharts**.
+The **Voting Ensemble (LogTarget)** was selected as the final SmartRent prediction model.
 
-Analytics can include:
+The ensemble combines:
 
-* Average rent by city
-* Rent distribution
-* Property size analysis
+```text
+                Voting Ensemble
+                       │
+              ┌────────┴────────┐
+              │                 │
+          XGBoost          Random Forest
+           Weight 2            Weight 1
+              │                 │
+              └────────┬────────┘
+                       │
+                       ▼
+                Final Prediction
+```
+
+### Model Configuration
+
+**Random Forest**
+
+```text
+n_estimators = 800
+max_depth = 18
+min_samples_split = 2
+min_samples_leaf = 1
+max_features = 0.7
+```
+
+**XGBoost**
+
+```text
+n_estimators = 1500
+learning_rate = 0.012
+max_depth = 6
+subsample = 0.75
+colsample_bytree = 0.7
+min_child_weight = 3
+gamma = 0.05
+reg_alpha = 0.1
+reg_lambda = 1.0
+```
+
+The Voting Regressor uses:
+
+```text
+XGBoost       → Weight 2
+Random Forest → Weight 1
+```
+
+---
+
+# 📈 Final Model Performance
+
+The selected **Voting Ensemble (LogTarget)** achieved:
+
+```text
+MAE  : ₹4,657.56
+RMSE : ₹8,479.29
+R²   : 0.8529
+```
+
+### Performance Summary
+
+* **MAE:** The average absolute prediction error is approximately ₹4,658.
+* **RMSE:** Larger prediction errors receive greater penalty, resulting in approximately ₹8,479.
+* **R²:** The model explains approximately **85.29% of the variance** in rental prices.
+
+The Voting Ensemble was selected because it provided the best overall performance among the evaluated models.
+
+---
+
+# 📊 Rental Market Analytics
+
+SmartRent provides interactive analytics using **Recharts**.
+
+The system can visualize:
+
+* City-wise rental prices
+* Average rent
+* Rental price distribution
 * BHK-based rental trends
-* Furnishing status analysis
-* City-wise rental comparison
-* Rental price trends
-* Property statistics
+* Property-size analysis
+* Furnishing-status analysis
+* Rental market statistics
+* Property information
 
 ---
 
-# 🔐 Security & Authentication
+# 🔐 Authentication & Security
 
-SmartRent implements secure user authentication using:
+SmartRent provides secure authentication using:
 
-* **JWT authentication**
-* **15-minute access tokens**
-* **7-day refresh tokens**
+* **JWT**
 * **Google Identity Services**
-* **Bcrypt / Werkzeug password hashing**
+* **Bcrypt / Werkzeug**
 * **Flask-CORS**
 
-Authentication helps protect user-specific features and application data.
+### Token Configuration
+
+```text
+Access Token  → 15 minutes
+Refresh Token → 7 days
+```
+
+JWT authentication protects user-specific application functionality.
+
+---
+
+# 🗄️ Database
+
+SmartRent uses:
+
+```text
+SQLite 3
+```
+
+Database:
+
+```text
+smartrent.db
+```
+
+Database operations are handled using:
+
+```text
+SQLAlchemy
+```
 
 ---
 
@@ -254,7 +394,7 @@ SmartRent/
 │   ├── src/
 │   ├── public/
 │   ├── package.json
-│   └── vite.config.js
+│   └── vite.config.*
 │
 ├── backend/
 │   ├── app/
@@ -265,10 +405,9 @@ SmartRent/
 │   └── app.py
 │
 ├── ml-service/
-│   ├── model/
-│   │   ├── best_model.pkl
-│   │   └── model_metadata.pkl
-│   └── ...
+│   └── model/
+│       ├── best_model.pkl
+│       └── model_metadata.pkl
 │
 ├── dataset/
 │   └── raw/
@@ -288,7 +427,91 @@ SmartRent/
 
 ---
 
-# 🚀 Getting Started
+# 📓 Machine Learning Notebooks
+
+The ML development process is organized into five notebooks:
+
+### 01 — Data Understanding
+
+Explores the dataset, columns, data types, distributions, and initial data quality.
+
+### 02 — Data Cleaning
+
+Handles missing values, data formatting, and dataset preparation.
+
+### 03 — Feature Engineering
+
+Creates additional numerical, categorical, date, floor, and property features.
+
+### 04 — Model Training
+
+Builds and trains the machine learning models.
+
+### 05 — Model Evaluation
+
+Compares model performance and selects the final prediction model.
+
+---
+
+# 💾 Trained Model
+
+The final trained model and metadata are stored in:
+
+```text
+ml-service/model/
+```
+
+### Model Files
+
+```text
+best_model.pkl
+model_metadata.pkl
+```
+
+`best_model.pkl` contains the trained prediction pipeline, while `model_metadata.pkl` stores the required model metadata.
+
+---
+
+# 🔄 Prediction Workflow
+
+```text
+User
+  │
+  ▼
+React Frontend
+  │
+  ▼
+Rental Property Inputs
+  │
+  ▼
+Flask Backend
+  │
+  ▼
+Feature Engineering
+  │
+  ▼
+Preprocessing Pipeline
+  │
+  ├── Numerical Imputation
+  ├── Standard Scaling
+  └── Target Encoding
+  │
+  ▼
+Voting Ensemble
+  │
+  ├── XGBoost
+  └── Random Forest
+  │
+  ▼
+Predicted Rental Price
+  │
+  ▼
+React Frontend
+```
+
+---
+
+# 🚀 Installation & Setup
 
 ## 1. Clone the Repository
 
@@ -302,17 +525,17 @@ cd SmartRent
 
 ```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
-
-The Vite development server will start the frontend application.
 
 ---
 
 ## 3. Backend Setup
 
-Create and activate a Python virtual environment:
+Create a Python virtual environment:
 
 ```bash
 cd backend
@@ -326,13 +549,13 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-Install dependencies:
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run Flask:
+Start the Flask backend:
 
 ```bash
 python app.py
@@ -340,146 +563,118 @@ python app.py
 
 ---
 
-## 4. Database
+# 🧪 Machine Learning Environment
 
-SmartRent uses:
+The machine learning components use Python and the following major libraries:
 
 ```text
-SQLite 3
+Python 3.11
+Pandas
+NumPy
+Scikit-Learn
+XGBoost
+Joblib
+Matplotlib
+Seaborn
 ```
 
-Database file:
+The trained pipeline can be regenerated using the notebooks inside:
 
 ```text
-smartrent.db
-```
-
-The database is managed using **SQLAlchemy**.
-
----
-
-# 🧪 ML Training
-
-The machine learning workflow is organized into five notebooks:
-
-| Notebook                 | Purpose                         |
-| ------------------------ | ------------------------------- |
-| `01_data_understanding`  | Dataset exploration             |
-| `02_data_cleaning`       | Cleaning and preprocessing      |
-| `03_feature_engineering` | Feature creation                |
-| `04_model_training`      | Model training                  |
-| `05_model_evaluation`    | Model comparison and evaluation |
-
-The trained model is stored as:
-
-```text
-ml-service/model/best_model.pkl
-```
-
-Model metadata is stored as:
-
-```text
-ml-service/model/model_metadata.pkl
+notebooks/
 ```
 
 ---
 
-# 🔄 Prediction Workflow
+# 🌟 Key Highlights
 
-```text
-User
- │
- ▼
-React Frontend
- │
- ▼
-Flask Backend
- │
- ▼
-Input Validation & Preprocessing
- │
- ▼
-Trained ML Model
- │
- ▼
-Predicted Monthly Rent
- │
- ▼
-Frontend Result
-```
+### 🤖 Machine Learning
 
----
+End-to-end rental price prediction using a log-target ensemble model.
 
-# 📌 Key Benefits
+### 📊 Data Analytics
 
-### For Users
+Interactive rental market visualization and analysis.
 
-* Quickly estimate rental prices.
-* Compare rental markets.
-* Explore property information.
-* Get data-driven recommendations.
+### 🔐 Secure Authentication
 
-### For the System
+JWT and Google-based authentication with access and refresh token management.
 
-* Machine learning powered predictions.
-* Structured rental data management.
-* Secure authentication.
-* Interactive analytics.
-* Modern responsive interface.
+### 🏠 Property Recommendations
+
+Supports data-driven property discovery and recommendation.
+
+### 🎨 Modern UI
+
+Responsive frontend built with React, Vite, custom CSS, Recharts, and Lucide React.
+
+### 🗃️ Structured Data Management
+
+SQLite database integrated through SQLAlchemy.
 
 ---
 
 # 🔮 Future Improvements
 
-* 🇱🇰 Sri Lankan rental dataset integration
-* 🗺️ Location-based property recommendations
+* 🇱🇰 Integration of Sri Lankan rental datasets
+* 🗺️ Location-based recommendations
 * 📍 Map integration
 * 📱 Mobile application
 * ☁️ Cloud deployment
 * 🔄 Automated model retraining
-* 📊 Advanced rental market forecasting
+* 📈 Advanced rental market forecasting
+* 🤖 Improved recommendation algorithms
 
 ---
 
 # 👥 Team Project
 
-SmartRent was developed as a **group machine learning project**, combining:
-
-* Frontend development
-* Backend development
-* Database management
-* Machine learning
-* Data preprocessing
-* Data visualization
-* System integration
-
----
-
-# 🎓 Academic Project
-
-SmartRent was developed as an academic project to demonstrate the practical application of:
+SmartRent was developed as a group academic project combining:
 
 * Machine Learning
 * Data Science
-* Full-Stack Development
+* Frontend Development
+* Backend Development
 * Database Management
-* Software Engineering
 * Data Visualization
+* Software Engineering
 
 ---
 
-## 📄 License
+# 🎓 Academic Purpose
 
-This project is developed for **academic and educational purposes**.
+SmartRent demonstrates the practical implementation of:
+
+```text
+Machine Learning
+       +
+Data Processing
+       +
+Full-Stack Development
+       +
+Database Management
+       +
+Data Visualization
+```
+
+The project focuses on applying machine learning to a real-world rental-price prediction problem while providing a complete user-facing application.
+
+---
+
+# 📄 License
+
+This project was developed for **academic and educational purposes**.
 
 ---
 
 <div align="center">
 
-### 🏠 SmartRent
+## 🏠 SmartRent
 
-**Predict • Analyze • Recommend**
+### Predict • Analyze • Recommend
 
-Built with ❤️ using React, Flask, SQLite & Machine Learning.
+**Machine Learning Based House Rental Price Prediction & Property Recommendation System**
+
+Built with ❤️ using **React • Flask • SQLite • Machine Learning**
 
 </div>
