@@ -107,6 +107,68 @@ Charts and visualizations are implemented using **Recharts**.
 
 ---
 
+# 🌐 Live Application
+
+SmartRent is deployed and available online:
+
+### 🎨 Frontend
+
+**SmartRent Web Application**
+
+[Open SmartRent Frontend](https://smartrent-b07b5.web.app?utm_source=chatgpt.com)
+
+```text
+https://smartrent-b07b5.web.app
+```
+
+### ⚙️ Backend API
+
+**SmartRent Backend — Railway**
+
+[Open SmartRent Backend API](https://satisfied-enchantment-production.up.railway.app?utm_source=chatgpt.com)
+
+```text
+https://satisfied-enchantment-production.up.railway.app
+```
+
+### 🚀 Deployment Architecture
+
+```text
+                    ┌─────────────────────────┐
+                    │     SmartRent User      │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   React Frontend        │
+                    │      Firebase           │
+                    │                         │
+                    │ smartrent-b07b5.web.app │
+                    └────────────┬────────────┘
+                                 │
+                              API Requests
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │    Flask Backend       │
+                    │       Railway          │
+                    │                         │
+                    │ satisfied-enchantment  │
+                    │ -production.up.railway │
+                    │         .app           │
+                    └────────────┬────────────┘
+                                 │
+                    ┌────────────┴────────────┐
+                    │                         │
+                    ▼                         ▼
+             ┌──────────────┐        ┌─────────────────┐
+             │    SQLite    │        │ ML Prediction   │
+             │   Database   │        │    Pipeline     │
+             └──────────────┘        └─────────────────┘
+```
+
+> 💡 **Try the live application:** Open the frontend link above to access the deployed SmartRent application.
+
 ## 🔎 Property Recommendation
 
 SmartRent supports data-driven property discovery and recommendation based on available rental property information.
