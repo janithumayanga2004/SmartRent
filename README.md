@@ -23,10 +23,17 @@
 ![SQLite](https://img.shields.io/badge/SQLite_3-003B57?style=for-the-badge\&logo=sqlite\&logoColor=white)
 ![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=for-the-badge)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge\&logo=railway\&logoColor=white)
 
 <br><br>
 
 ### **Predict • Analyze • Recommend**
+
+<br>
+
+[🌐 Live Application](https://smartrent-b07b5.web.app) •
+[⚙️ Backend API](https://satisfied-enchantment-production.up.railway.app)
 
 </div>
 
@@ -34,104 +41,176 @@
 
 # 📌 Overview
 
-**SmartRent** is an end-to-end machine learning application developed to address a real-world house rental price prediction problem.
+**SmartRent** is an end-to-end machine learning application developed to address a real-world **house rental price prediction** problem.
 
-The system combines **machine learning, data processing, rental market analytics, property recommendations, authentication, database management, and a modern web interface** into one platform.
+The platform combines:
 
-SmartRent uses a real-world **House Rent Dataset containing 4,746 rental listings** from major Indian Tier-1 cities.
+> 🤖 Machine Learning
+> 📊 Data Analytics
+> 🏠 Property Intelligence
+> 🔐 Authentication
+> 🗄️ Database Management
+> 🎨 Full-Stack Web Development
 
-The platform allows users to:
+SmartRent uses a **House Rent Dataset containing 4,746 rental listings** from six major Indian cities and transforms raw rental data into a complete, user-facing prediction and analytics platform.
 
-* 🏠 Predict monthly rental prices
-* 🤖 Use machine learning-based rental valuation
-* 🔎 Discover suitable rental properties
-* 📊 Explore rental market analytics
-* 📈 View interactive data visualizations
-* 👤 Register and authenticate
-* 🔐 Access protected user functionality
-* 🏘️ Manage rental property information
-* 📋 Manage prediction and rental data
+### What SmartRent Provides
+
+| Capability                     | Description                                            |
+| ------------------------------ | ------------------------------------------------------ |
+| 🏠 **Rental Prediction**       | Estimates monthly rental prices using machine learning |
+| 🔎 **Property Recommendation** | Supports data-driven property discovery                |
+| 📊 **Market Analytics**        | Provides rental trends and statistical insights        |
+| 📈 **Data Visualization**      | Interactive charts using Recharts                      |
+| 👤 **Authentication**          | Registration, login and Google Sign-In                 |
+| 🔐 **Security**                | JWT authentication and password hashing                |
+| 🏘️ **Property Management**    | Manage rental property information                     |
+| 🗄️ **Database**               | SQLite database with SQLAlchemy ORM                    |
 
 ---
 
-# ✨ Features
+# ✨ Core Features
 
 ## 🏠 Rental Price Prediction
 
-SmartRent uses a trained machine learning pipeline to estimate the monthly rental price of a property based on its characteristics.
+SmartRent uses a trained machine learning pipeline to estimate the **monthly rental price** of a property based on its characteristics.
 
-### Key Inputs
+### Key Prediction Inputs
 
-* BHK
-* Property size
-* Bathroom count
-* Floor information
-* City
-* Area
-* Furnishing status
-* Tenant preference
-* Property-related engineered features
+```text
+BHK
+Property Size
+Bathroom Count
+Floor Information
+City
+Area / Locality
+Furnishing Status
+Tenant Preference
+Engineered Property Features
+```
+
+The prediction workflow transforms these inputs through the same preprocessing and feature-engineering pipeline used during model training.
 
 ---
 
 ## 🤖 Machine Learning
 
-The machine learning system includes:
+The machine learning workflow includes:
 
-* Data preprocessing
+* Data understanding
+* Data cleaning
 * Feature engineering
+* Missing-value handling
 * Numerical feature scaling
-* Categorical encoding
-* Log-target transformation
+* Categorical target encoding
+* Log transformation
 * Regression model training
 * Ensemble learning
 * Model evaluation
 * Trained model persistence
 
+### Models Evaluated
+
+```text
+Linear Regression
+Random Forest
+XGBoost
+Voting Ensemble
+```
+
 ---
 
 ## 📊 Rental Market Analytics
 
-The application provides interactive rental market insights including:
+SmartRent provides interactive rental-market insights through **Recharts**.
 
-* City-wise rental prices
-* Average rent
-* Rental price distribution
-* BHK-based rental trends
-* Property-size analysis
-* Furnishing-status analysis
-* Rental market statistics
-* Property information
+### Analytics Include
 
-Charts and visualizations are implemented using **Recharts**.
+* 🏙️ City-wise rental prices
+* 💰 Average rental prices
+* 📊 Rental price distribution
+* 🛏️ BHK-based rental trends
+* 📐 Property-size analysis
+* 🛋️ Furnishing-status analysis
+* 📈 Rental market statistics
+* 🏠 Property information
+
+---
+
+## 🔎 Property Recommendation
+
+SmartRent supports **data-driven property discovery and recommendation** based on available rental property information.
+
+The recommendation functionality uses property characteristics and rental information to help users identify properties that match relevant requirements.
+
+---
+
+## 🔐 Authentication
+
+The application includes:
+
+* User registration
+* User login
+* JWT authentication
+* Access tokens
+* Refresh tokens
+* Google Sign-In
+* Password hashing
+* Protected user functionality
+
+### Token Configuration
+
+```text
+Access Token  → 15 Minutes
+Refresh Token → 7 Days
+```
+
+---
+
+## 📱 Responsive Interface
+
+The frontend is built as a modern responsive web application using:
+
+```text
+React 19
+Vite 8
+Modern CSS
+Recharts
+Lucide React
+Axios
+```
 
 ---
 
 # 🌐 Live Application
 
-SmartRent is deployed and available online:
+SmartRent is deployed and available online.
 
-### 🎨 Frontend
+## 🎨 Frontend
 
-**SmartRent Web Application**
+### **SmartRent Web Application**
 
-[Open SmartRent Frontend](https://smartrent-b07b5.web.app?utm_source=chatgpt.com)
+🔗 **Live Frontend**
 
-```text
 https://smartrent-b07b5.web.app
-```
 
-### ⚙️ Backend API
+[![Open SmartRent](https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-SmartRent-4285F4?style=for-the-badge\&logo=firebase\&logoColor=white)](https://smartrent-b07b5.web.app)
 
-**SmartRent Backend — Railway**
+---
 
-[Open SmartRent Backend API](https://satisfied-enchantment-production.up.railway.app?utm_source=chatgpt.com)
+## ⚙️ Backend API
 
-```text
+### **SmartRent Backend — Railway**
+
+🔗 **Live Backend**
+
 https://satisfied-enchantment-production.up.railway.app
-```
 
-### 🚀 Deployment Architecture
+[![Open Backend](https://img.shields.io/badge/BACKEND%20API-Railway-0B0D0E?style=for-the-badge\&logo=railway\&logoColor=white)](https://satisfied-enchantment-production.up.railway.app)
+
+---
+
+## 🚀 Deployment Architecture
 
 ```text
                     ┌─────────────────────────┐
@@ -150,12 +229,12 @@ https://satisfied-enchantment-production.up.railway.app
                                  │
                                  ▼
                     ┌─────────────────────────┐
-                    │    Flask Backend       │
-                    │       Railway          │
+                    │     Flask Backend       │
+                    │        Railway          │
                     │                         │
-                    │ satisfied-enchantment  │
-                    │ -production.up.railway │
-                    │         .app           │
+                    │ satisfied-enchantment   │
+                    │ -production.up.railway  │
+                    │         .app            │
                     └────────────┬────────────┘
                                  │
                     ┌────────────┴────────────┐
@@ -165,43 +244,9 @@ https://satisfied-enchantment-production.up.railway.app
              │    SQLite    │        │ ML Prediction   │
              │   Database   │        │    Pipeline     │
              └──────────────┘        └─────────────────┘
+```
 
-> 💡 The frontend is deployed using Firebase, while the Flask backend API is deployed using Railway.
-
----
-
-## 🔎 Property Recommendation
-
-SmartRent supports data-driven property discovery and recommendation based on available rental property information.
-
-The recommendation functionality uses property characteristics and available rental information to help users identify suitable properties.
-
----
-
-## 🔐 Authentication
-
-The application includes:
-
-* User registration
-* User login
-* JWT authentication
-* Access tokens
-* Refresh tokens
-* Google Sign-In
-* Password hashing
-* Protected user functionality
-
----
-
-## 📱 Responsive Interface
-
-The frontend is designed as a modern responsive web application using:
-
-* React
-* Vite
-* Modern CSS
-* Recharts
-* Lucide React
+> 💡 **Try the live application:** Open the frontend link above to access the deployed SmartRent application.
 
 ---
 
@@ -230,7 +275,7 @@ SmartRent aims to:
                          │   Recharts + Lucide UI   │
                          └────────────┬─────────────┘
                                       │
-                                      │ HTTP / API
+                                      │ HTTP / REST API
                                       ▼
                          ┌──────────────────────────┐
                          │      Flask Backend       │
@@ -259,8 +304,8 @@ SmartRent aims to:
                                                      │
                                                      ▼
                                         ┌────────────────────────┐
-                                        │   Predicted Rent       │
-                                        │      ₹ / Month         │
+                                        │    Predicted Rent      │
+                                        │       ₹ / Month        │
                                         └────────────────────────┘
 ```
 
@@ -332,6 +377,7 @@ SmartRent aims to:
 ![Recharts](https://img.shields.io/badge/Recharts_3-22B5BF?style=for-the-badge)
 ![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge)
 ![CSS](https://img.shields.io/badge/Modern_CSS-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)
 ![Oxlint](https://img.shields.io/badge/Oxlint-111111?style=for-the-badge)
 
 ### Technologies
@@ -339,7 +385,7 @@ SmartRent aims to:
 ```text
 React 19
 Vite 8
-Recharts
+Recharts 3
 Lucide React
 Axios
 Modern CSS
@@ -348,7 +394,7 @@ Oxlint
 
 ---
 
-# ⚙️ Backend
+## ⚙️ Backend
 
 ![Python](https://img.shields.io/badge/Python_3.11-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask_3.x-000000?style=for-the-badge\&logo=flask\&logoColor=white)
@@ -371,7 +417,7 @@ REST API
 
 ---
 
-# 🤖 Machine Learning & Data Science
+## 🤖 Machine Learning & Data Science
 
 ![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
@@ -396,6 +442,18 @@ Seaborn
 
 ---
 
+## ☁️ Deployment
+
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge\&logo=railway\&logoColor=white)
+
+```text
+Frontend → Firebase Hosting
+Backend  → Railway
+```
+
+---
+
 # 📊 Dataset
 
 SmartRent uses the **House Rent Dataset** containing:
@@ -404,16 +462,18 @@ SmartRent uses the **House Rent Dataset** containing:
 4,746 rental listings
 ```
 
-The dataset contains rental listings from major Indian Tier-1 cities.
+The dataset contains rental listings from six major Indian Tier-1 cities.
 
 ## 🌆 Cities Covered
 
-* Mumbai
-* Delhi
-* Bangalore
-* Chennai
-* Hyderabad
-* Kolkata
+|  # | City      |
+| -: | --------- |
+| 01 | Mumbai    |
+| 02 | Delhi     |
+| 03 | Bangalore |
+| 04 | Chennai   |
+| 05 | Hyderabad |
+| 06 | Kolkata   |
 
 ## 📋 Main Dataset Features
 
@@ -438,7 +498,7 @@ Point of Contact
 Rent
 ```
 
-The target variable represents the monthly rental price.
+The target variable represents the **monthly rental price**.
 
 ---
 
@@ -507,9 +567,11 @@ SmartRent applies a structured feature-engineering process to transform raw rent
 
 The feature-engineering workflow is implemented mainly across:
 
-* `notebooks/02_data_cleaning.ipynb`
-* `notebooks/03_feature_engineering.ipynb`
-* `notebooks/04_model_training.ipynb`
+```text
+notebooks/02_data_cleaning.ipynb
+notebooks/03_feature_engineering.ipynb
+notebooks/04_model_training.ipynb
+```
 
 The project applies **11 important data-processing and feature-engineering techniques**.
 
@@ -519,19 +581,19 @@ The project applies **11 important data-processing and feature-engineering techn
 
 SmartRent derives additional property-level features from existing attributes.
 
-The engineered ratio features include:
+### Ratio Features
 
 * **Floor Ratio** — represents the property's current floor position relative to the total number of floors.
 * **Bathroom/BHK Ratio** — captures the number of bathrooms relative to the number of bedrooms.
 * **Size per BHK** — represents the available property size per bedroom.
 * **Size per Bathroom** — represents the available property size per bathroom.
 
-The system also creates property-position flags:
+### Property Position Flags
 
 * **Is Top Floor** — identifies properties located on the highest floor.
 * **Is Ground Floor** — identifies ground-floor properties.
 
-These features provide additional information about **property layout, space efficiency, and floor position** that may not be directly captured by the original dataset variables.
+These features provide additional information about **property layout, space efficiency, and floor position**.
 
 ---
 
@@ -539,25 +601,25 @@ These features provide additional information about **property layout, space eff
 
 The preprocessing workflow removes attributes that are no longer required after useful information has been extracted.
 
-The removed features include:
+### Removed Features
 
 * **Posted On** — removed after extracting year, month, and day-of-week information.
 * **Point of Contact** — removed because it represents administrative metadata rather than a core property characteristic.
-* **Floor** — removed after extracting structured numerical floor information such as current floor and total floors.
+* **Floor** — removed after extracting structured numerical floor information.
 
-This reduces unnecessary information and keeps the final training dataset focused on features relevant to rental-price prediction.
+This keeps the final training dataset focused on features relevant to rental-price prediction.
 
 ---
 
 ## 3️⃣ Handling Missing Values
 
-SmartRent handles missing values at multiple stages of the machine-learning workflow.
+SmartRent handles missing values at multiple stages.
 
-For floor-related features, missing values are safely handled by assigning appropriate default values before calculating derived floor features and ratios.
+For floor-related features, missing values are safely handled before calculating derived floor features and ratios.
 
 The machine-learning preprocessing pipeline additionally uses **median imputation** for numerical variables.
 
-This provides a consistent input structure for model training and prediction while reducing the impact of missing numerical values.
+This provides a consistent input structure for both training and prediction.
 
 ---
 
@@ -565,18 +627,20 @@ This provides a consistent input structure for model training and prediction whi
 
 The dataset contains categorical variables with potentially high-cardinality values, particularly:
 
-* Area Locality
-* City
-* City_Locality
-* City_BHK
-* City_Furnishing
-* Furnishing Status
-* Tenant Preferred
-* Size Category
+```text
+Area Locality
+City
+City_Locality
+City_BHK
+City_Furnishing
+Furnishing Status
+Tenant Preferred
+Size Category
+```
 
 SmartRent uses **Target Encoding with cross-validation** to convert categorical information into numerical representations informed by the target variable.
 
-This approach allows the models to work with location and property-category information while reducing the dimensionality that could result from traditional one-hot encoding on high-cardinality features.
+This allows the model to use location and property-category information while avoiding the dimensionality that traditional one-hot encoding can create for high-cardinality features.
 
 ---
 
@@ -584,9 +648,7 @@ This approach allows the models to work with location and property-category info
 
 Numerical features are standardized using **StandardScaler** within the machine-learning preprocessing pipeline.
 
-Standardization transforms numerical variables into a common scale based on their distribution.
-
-This creates a consistent numerical representation for the machine-learning pipeline and is particularly useful for models and preprocessing workflows where feature scale can affect model behavior.
+Standardization creates a consistent numerical representation for the machine-learning workflow.
 
 ---
 
@@ -596,12 +658,10 @@ SmartRent applies logarithmic transformation to handle highly skewed numerical d
 
 The system creates:
 
-* **Log_Size** for the property-size feature.
+* **Log_Size** for property size.
 * A log-transformed **Rent target** during model training.
 
-The target transformation uses a logarithmic representation during training and converts predictions back to the original rental-price scale after prediction.
-
-This helps the model work with the skewed distribution of rental prices and property sizes while keeping final predictions interpretable as actual monthly rental values.
+The target transformation is reversed after prediction so the final output is returned on the original rental-price scale.
 
 ---
 
@@ -609,32 +669,28 @@ This helps the model work with the skewed distribution of rental prices and prop
 
 The original **Posted On** field contains listing-date information.
 
-Instead of directly using the raw timestamp, SmartRent extracts:
+SmartRent extracts:
 
 * **Posted Year**
 * **Posted Month**
 * **Posted Day of Week**
 
-These features allow the machine-learning workflow to represent temporal information in a structured form.
-
-After extracting the useful date components, the original raw date field is removed from the training features.
+The original raw date field is then removed from the training features.
 
 ---
 
-## 8️⃣ Binning — Discretization
+## 8️⃣ Binning / Discretization
 
-SmartRent converts continuous property size values into meaningful size categories.
+SmartRent converts continuous property-size values into four meaningful categories.
 
-The system creates four categories:
+| Category       |   Property Size |
+| -------------- | --------------: |
+| **Small**      |         `< 800` |
+| **Medium**     |   `800 – 1,499` |
+| **Large**      | `1,500 – 2,499` |
+| **Very Large** |       `≥ 2,500` |
 
-| Category       | Property Size   |
-| :------------- | :-------------- |
-| **Small**      | Less than 800   |
-| **Medium**     | 800–1,499       |
-| **Large**      | 1,500–2,499     |
-| **Very Large** | 2,500 and above |
-
-This converts continuous square-footage information into broader property-size groups that can provide an additional categorical representation of property scale.
+This provides an additional categorical representation of property scale.
 
 ---
 
@@ -642,19 +698,15 @@ This converts continuous square-footage information into broader property-size g
 
 SmartRent creates combined features to represent relationships between important property attributes.
 
-The interaction features include:
+### Interaction Features
 
-* **City + Area Locality**
-* **City + BHK**
-* **City + Furnishing Status**
+```text
+City + Area Locality
+City + BHK
+City + Furnishing Status
+```
 
-These combinations allow the model to capture relationships such as:
-
-* Different locality characteristics within the same city.
-* Different rental patterns for BHK types within a city.
-* Differences in furnishing-related rental patterns across cities.
-
-Feature interactions therefore provide the models with more detailed contextual information about each property.
+These combinations allow the model to capture more detailed contextual relationships within the rental data.
 
 ---
 
@@ -662,50 +714,56 @@ Feature interactions therefore provide the models with more detailed contextual 
 
 SmartRent performs validation and outlier filtering before model training.
 
-First, basic bound validation ensures that important property and rental variables contain valid positive values.
+### Basic Validation
 
 The workflow validates:
 
-* Rent
-* Size
-* BHK
-* Bathroom
+```text
+Rent
+Size
+BHK
+Bathroom
+```
 
-The project then applies **city-wise IQR-based filtering** to rental prices.
+These variables are checked for valid positive values.
 
-For each city, the system calculates:
+### City-Wise IQR Filtering
 
-* First Quartile (Q1)
-* Third Quartile (Q3)
-* Interquartile Range (IQR)
+For each city, the workflow calculates:
+
+```text
+Q1
+Q3
+IQR
+```
 
 Rental listings outside the defined city-level IQR bounds are filtered.
 
-Using city-wise filtering helps account for differences in rental-price distributions between locations rather than applying one global threshold across all cities.
+City-wise filtering accounts for differences between rental-price distributions across locations.
 
 ---
 
 ## 1️⃣1️⃣ Text Feature Extraction
 
-The original **Floor** attribute contains text-based information such as:
+The original **Floor** attribute contains text such as:
 
-* `1 out of 3`
-* `Ground out of 2`
+```text
+1 out of 3
+Ground out of 2
+```
 
-SmartRent parses this text information into structured numerical features:
+SmartRent parses this information into:
 
-* **Current_Floor**
-* **Total_Floors**
+```text
+Current_Floor
+Total_Floors
+```
 
-This converts an unstructured text representation into numerical property attributes that can be processed by the machine-learning pipeline.
-
-After extraction, the original text-based **Floor** feature is removed.
+The original text-based `Floor` feature is then removed.
 
 ---
 
-## 🧩 Feature Engineering Summary
-
-The complete feature-engineering workflow can be summarized as:
+# 🧩 Feature Engineering Summary
 
 ```text
 Raw Rental Data
@@ -748,7 +806,7 @@ Machine Learning Pipeline
 
 # 🧠 Machine Learning
 
-SmartRent evaluates multiple regression models using a consistent preprocessing and log-target workflow.
+SmartRent evaluates multiple regression models using a consistent preprocessing and **log-target workflow**.
 
 ## 🔬 Models Evaluated
 
@@ -766,8 +824,6 @@ Voting Ensemble
 Rental prices can have a skewed distribution.
 
 SmartRent transforms the rental-price target into a logarithmic representation during model training.
-
-The workflow is:
 
 ```text
 Original Rent
@@ -791,7 +847,7 @@ Inverse Transformation
 Predicted Rent
 ```
 
-The final prediction is converted back to the original rental-price scale so that users receive a monthly rental-price estimate in Indian Rupees.
+The final prediction is converted back to the original rental-price scale so users receive a monthly rental-price estimate in **Indian Rupees**.
 
 ---
 
@@ -813,7 +869,7 @@ XGBoost
 Random Forest
 ```
 
-with the following configuration:
+### Ensemble Configuration
 
 ```text
 XGBoost       → Weight 2
@@ -857,8 +913,6 @@ Random Forest → Weight 1
 
 # 📈 Final Evaluation Results
 
-The evaluated models produced the following results:
-
 | Model                           |      MAE (₹) |     RMSE (₹) |         R² |
 | :------------------------------ | -----------: | -----------: | ---------: |
 | Linear Regression (LogTarget)   |     5,371.85 |    10,559.62 |     0.7718 |
@@ -866,16 +920,7 @@ The evaluated models produced the following results:
 | XGBoost (LogTarget)             |     4,678.98 |     8,582.00 |     0.8493 |
 | **Voting Ensemble (LogTarget)** | **4,657.56** | **8,479.29** | **0.8529** |
 
----
-
-## 🏆 Selected Model
-
-```text
-Selected Model:
-Voting Ensemble (LogTarget)
-```
-
-### Final Metrics
+### Final Model Metrics
 
 ```text
 MAE  : ₹4,657.56
@@ -883,18 +928,17 @@ RMSE : ₹8,479.29
 R²   : 0.8529
 ```
 
-The selected model and supporting metadata are stored in:
-
-```text
-ml-service/model/
-```
-
 ### Model Artifacts
 
 ```text
-best_model.pkl
-model_metadata.pkl
+ml-service/model/
+├── best_model.pkl
+└── model_metadata.pkl
 ```
+
+`best_model.pkl` contains the trained prediction model and preprocessing pipeline.
+
+`model_metadata.pkl` contains supporting metadata required by the prediction system.
 
 ---
 
@@ -902,16 +946,18 @@ model_metadata.pkl
 
 SmartRent provides interactive rental analytics through **Recharts**.
 
-The system supports visualization of:
+### Supported Analytics
 
-* 🏙️ City-wise rental prices
-* 💰 Average rental prices
-* 📊 Rental price distribution
-* 🛏️ BHK-based rental trends
-* 📐 Property-size analysis
-* 🛋️ Furnishing-status analysis
-* 📈 Rental market statistics
-* 🏠 Property information
+```text
+City-wise Rental Prices
+Average Rental Prices
+Rental Price Distribution
+BHK-based Rental Trends
+Property-size Analysis
+Furnishing-status Analysis
+Rental Market Statistics
+Property Information
+```
 
 ---
 
@@ -926,7 +972,7 @@ Bcrypt / Werkzeug
 Flask-CORS
 ```
 
-## 🔑 Token Configuration
+### 🔑 Token Configuration
 
 ```text
 Access Token  → 15 Minutes
@@ -1002,7 +1048,17 @@ SmartRent/
 
 # 📓 Machine Learning Notebooks
 
-The machine learning development process is organized into five notebooks.
+The machine-learning development process is organized into five notebooks.
+
+| Notebook                       | Purpose                                       |
+| :----------------------------- | :-------------------------------------------- |
+| `01_data_understanding.ipynb`  | Dataset exploration, structure and analysis   |
+| `02_data_cleaning.ipynb`       | Cleaning, validation and outlier treatment    |
+| `03_feature_engineering.ipynb` | Feature creation and transformation           |
+| `04_model_training.ipynb`      | Preprocessing, training and ensemble creation |
+| `05_model_evaluation.ipynb`    | Model evaluation and comparison               |
+
+---
 
 ## 01 — Data Understanding
 
@@ -1095,9 +1151,7 @@ best_model.pkl
 model_metadata.pkl
 ```
 
-`best_model.pkl` contains the trained prediction model and preprocessing pipeline.
-
-`model_metadata.pkl` contains supporting metadata required by the prediction system.
+The saved artifacts allow the deployed prediction service to load the trained model and associated metadata.
 
 ---
 
@@ -1107,15 +1161,12 @@ model_metadata.pkl
 
 ```bash
 git clone https://github.com/janithumayanga2004/SmartRent.git
-```
-
-```bash
 cd SmartRent
 ```
 
 ---
 
-# 🎨 2️⃣ Frontend Setup
+## 2️⃣ Frontend Setup
 
 Navigate to the frontend:
 
@@ -1137,7 +1188,7 @@ npm run dev
 
 ---
 
-# ⚙️ 3️⃣ Backend Setup
+## 3️⃣ Backend Setup
 
 Open another terminal and navigate to:
 
@@ -1260,6 +1311,8 @@ notebooks/
 |    Ensemble model   | Interactive charts | Property management |
 | Feature engineering |    City analysis   |  Property discovery |
 
+<br>
+
 |    🔐 Security   | 🎨 Frontend | 🗄️ Backend |
 | :--------------: | :---------: | :---------: |
 |        JWT       |   React 19  |    Flask    |
@@ -1278,10 +1331,10 @@ notebooks/
 * 📱 Dedicated mobile application
 * ☁️ Cloud deployment expansion
 * 🔄 Automated model retraining
-* 📈 Advanced rental market forecasting
+* 📈 Advanced rental-market forecasting
 * 🤖 Improved recommendation algorithms
 * 🌐 Wider geographic coverage
-* 📊 Real-time rental market monitoring
+* 📊 Real-time rental-market monitoring
 
 ---
 
@@ -1297,13 +1350,15 @@ notebooks/
 
 SmartRent was developed as a group academic project combining:
 
-* 🤖 Machine Learning
-* 📊 Data Science
-* 🎨 Frontend Development
-* ⚙️ Backend Development
-* 🗄️ Database Management
-* 📈 Data Visualization
-* 💻 Software Engineering
+```text
+🤖 Machine Learning
+📊 Data Science
+🎨 Frontend Development
+⚙️ Backend Development
+🗄️ Database Management
+📈 Data Visualization
+💻 Software Engineering
+```
 
 ---
 
@@ -1320,7 +1375,7 @@ SmartRent was developed as a group academic project combining:
 
 <div align="center">
 
-**TEAM DATA FLUX**
+### **TEAM DATA FLUX**
 
 `Janith Umayanga` • `Matheesha Abiman` • `Vihanga Sathsara` • `Madushka Sri Sandesh`
 
@@ -1399,7 +1454,7 @@ Through this project, the team gained practical experience in:
 | **Frontend**            | React 19 + Vite 8                       |
 | **Backend**             | Python + Flask                          |
 | **Database**            | SQLite + SQLAlchemy                     |
-| **ML**                  | Scikit-Learn + XGBoost                  |
+| **Machine Learning**    | Scikit-Learn + XGBoost                  |
 | **Frontend Deployment** | Firebase                                |
 | **Backend Deployment**  | Railway                                 |
 | **Team**                | Data Flux                               |
@@ -1430,6 +1485,14 @@ The dataset, third-party libraries, frameworks, and technologies used in this pr
 ### 👥 Team **Data Flux**
 
 **Janith Umayanga** • **Matheesha Abiman** • **Vihanga Sathsara** • **Madushka Sri Sandesh**
+
+<br>
+
+![React](https://img.shields.io/badge/React-19-20232A?style=flat-square\&logo=react\&logoColor=61DAFB)
+![Flask](https://img.shields.io/badge/Flask-3.x-000000?style=flat-square\&logo=flask\&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-3-003B57?style=flat-square\&logo=sqlite\&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square\&logo=scikit-learn\&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square)
 
 <br>
 
