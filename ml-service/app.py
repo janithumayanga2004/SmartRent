@@ -38,8 +38,8 @@ CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 init_db()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model", "best_model.pkl")
-METADATA_PATH = os.path.join(BASE_DIR, "model", "model_metadata.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "best_model.pkl")
+METADATA_PATH = os.path.join(BASE_DIR, "models", "model_metadata.pkl")
 
 # Load predictor and metadata
 predictor = RentPredictor(MODEL_PATH)
