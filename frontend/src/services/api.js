@@ -1,4 +1,4 @@
-const API_BASE = '';
+const API_BASE = 'https://satisfied-enchantment-production.up.railway.app';
 
 // ─── Token helpers ────────────────────────────────────────────────────────────
 function getAccessToken()  { return localStorage.getItem('smartrent_access_token'); }
