@@ -596,36 +596,6 @@ Random Forest → Weight 1
                   └───────────────────┘
 ```
 
----
-
-# ⚙️ Model Configuration
-
-## 🌲 Random Forest
-
-```text
-n_estimators      = 800
-max_depth         = 18
-min_samples_split = 2
-min_samples_leaf  = 1
-max_features      = 0.7
-```
-
-## 🚀 XGBoost
-
-```text
-n_estimators       = 1500
-learning_rate      = 0.012
-max_depth          = 6
-subsample          = 0.75
-colsample_bytree   = 0.7
-min_child_weight   = 3
-gamma              = 0.05
-reg_alpha          = 0.1
-reg_lambda         = 1.0
-```
-
----
-
 # 📈 Final Evaluation Results
 
 The evaluated models produced the following results:
