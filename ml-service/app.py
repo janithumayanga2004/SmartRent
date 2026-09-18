@@ -2,6 +2,7 @@
 
 import os
 import joblib
+import gdown
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -38,15 +39,39 @@ CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 init_db()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "best_model.pkl")
-METADATA_PATH = os.path.join(BASE_DIR, "models", "model_metadata.pkl")
 
-# Load predictor and metadata
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+os.makedirs(MODELS_DIR, exist_ok=True)
+
+MODEL_PATH = os.path.join(MODELS_DIR, "best_model.pkl")
+METADATA_PATH = os.path.join(MODELS_DIR, "model_metadata.pkl")
+
+# Google Drive model file
+GOOGLE_DRIVE_MODEL_ID = "1Tf_yBuTrvC30o3AYyH-eCdG8RC5apU8X"
+
+# Download model from Google Drive if it is not already available
+if not os.path.exists(MODEL_PATH) or os.path.getsize(MODEL_PATH) < 1000000:
+    print("Downloading ML model from Google Drive...")
+
+    gdown.download(
+        id=GOOGLE_DRIVE_MODEL_ID,
+        output=MODEL_PATH,
+        quiet=False
+    )
+
+    print("Model download completed.")
+    print("Model size:", os.path.getsize(MODEL_PATH))
+
+# Load predictor
 predictor = RentPredictor(MODEL_PATH)
+
 try:
     metadata = joblib.load(METADATA_PATH)
 except Exception:
-    metadata = {"model_name": "Extra Trees (LogTarget)", "target": "Rent"}
+    metadata = {
+        "model_name": "Extra Trees (LogTarget)",
+        "target": "Rent"
+    }
 
 
 # ---------------------------------------------------------
